@@ -1,0 +1,26 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="1"
+    android:padding="16dp">
+
+    <TableRow>
+        <TextView android:text="File"/>
+        <TextView android:text="Open"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView android:text="Save"/>
+        <TextView android:text="Save As"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView android:text="Import"/>
+        <TextView android:text="Export"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView android:text="Quit"/>
+    </TableRow>
+
+</TableLayout>

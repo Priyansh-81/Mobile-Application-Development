@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Question1</string>
+    <string name="RedColored">Red coloured Text</string>
+    <string name="BigText">Big Text</string>
+    <string name="BoldText">Big Bold Text</string>
+    <string name="BoldRed">Big Bold Red Text</string>
+</resources>
