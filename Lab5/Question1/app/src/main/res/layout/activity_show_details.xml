@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEF2FF"
+    android:padding="24dp"
+    tools:context=".ShowDetails">
+
+    <!-- Rounded Card -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:elevation="10dp"
+        android:backgroundTint="@android:color/white"
+        app:cardCornerRadius="28dp"
+        app:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="24dp">
+
+            <!-- Title -->
+            <TextView
+                android:id="@+id/titleTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Confirm Vehicle Details"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:textColor="#111827"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="24dp" />
+
+            <!-- Vehicle Type -->
+            <TextView
+                android:id="@+id/vehicleTypeTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/titleTextView"
+                android:background="@drawable/bg_rounded_input"
+                android:padding="16dp"
+                android:textSize="18sp"
+                android:textColor="#1F2937"
+                android:layout_marginBottom="14dp" />
+
+            <!-- Vehicle Number -->
+            <TextView
+                android:id="@+id/vehicleNumberTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/vehicleTypeTextView"
+                android:background="@drawable/bg_rounded_input"
+                android:padding="16dp"
+                android:textSize="18sp"
+                android:textColor="#1F2937"
+                android:layout_marginBottom="14dp" />
+
+            <!-- RC Number -->
+            <TextView
+                android:id="@+id/rcNumberTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/vehicleNumberTextView"
+                android:background="@drawable/bg_rounded_input"
+                android:padding="16dp"
+                android:textSize="18sp"
+                android:textColor="#1F2937"
+                android:layout_marginBottom="28dp" />
+
+            <!-- Confirm Button -->
+            <Button
+                android:id="@+id/confirmButton"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_below="@id/rcNumberTextView"
+                android:text="Confirm"
+                android:textAllCaps="false"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:background="@drawable/bg_rounded_button"
+                android:textColor="@android:color/white"
+                android:layout_marginBottom="12dp" />
+
+            <!-- Edit Button -->
+            <Button
+                android:id="@+id/editButton"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_below="@id/confirmButton"
+                android:text="Edit"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                android:background="@drawable/bg_rounded_outline_button"
+                android:textColor="#4F46E5" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

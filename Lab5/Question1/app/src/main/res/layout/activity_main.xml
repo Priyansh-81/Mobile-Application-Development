@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEF2FF"
+    android:padding="24dp"
+    tools:context=".MainActivity">
+
+    <!-- Super Rounded Card -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:elevation="10dp"
+        android:backgroundTint="@android:color/white"
+        app:cardCornerRadius="28dp"
+        app:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="24dp">
+
+            <!-- Title -->
+            <TextView
+                android:id="@+id/titleTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:textColor="#111827"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="28dp" />
+
+            <!-- Rounded Spinner -->
+            <Spinner
+                android:id="@+id/vehicleTypeSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_below="@id/titleTextView"
+                android:entries="@array/vehicle_types"
+                android:background="@drawable/bg_rounded_input"
+                android:paddingHorizontal="16dp"
+                android:layout_marginBottom="18dp" />
+
+            <!-- Vehicle Number -->
+            <EditText
+                android:id="@+id/vehicleNumberEditText"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_below="@id/vehicleTypeSpinner"
+                android:hint="@string/vehicle_number_hint"
+                android:inputType="textCapCharacters"
+                android:background="@drawable/bg_rounded_input"
+                android:paddingHorizontal="16dp"
+                android:layout_marginBottom="18dp" />
+
+            <!-- RC Number -->
+            <EditText
+                android:id="@+id/rcNumberEditText"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_below="@id/vehicleNumberEditText"
+                android:hint="@string/rc_number_hint"
+                android:inputType="textCapCharacters"
+                android:background="@drawable/bg_rounded_input"
+                android:paddingHorizontal="16dp"
+                android:layout_marginBottom="26dp" />
+
+            <!-- Pill Button -->
+            <Button
+                android:id="@+id/submitButton"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_below="@id/rcNumberEditText"
+                android:text="@string/submit_button_text"
+                android:textAllCaps="false"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:background="@drawable/bg_rounded_button"
+                android:textColor="@android:color/white" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

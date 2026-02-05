@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string-array name="movies_array">
+        <item>Select Movie</item>
+        <item>Movie 1</item>
+        <item>Movie 2</item>
+        <item>Movie 3</item>
+    </string-array>
+    <string-array name="theatres_array">
+        <item>Select Theatre</item>
+        <item>Theatre 1</item>
+        <item>Theatre 2</item>
+        <item>Theatre 3</item>
+    </string-array>
+</resources>

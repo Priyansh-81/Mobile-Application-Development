@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Vehicle Parking Registration</string>
+    <string-array name="vehicle_types">
+        <item>Car</item>
+        <item>Bike</item>
+        <item>Other</item>
+    </string-array>
+    <string name="vehicle_number_hint">Vehicle Number</string>
+    <string name="rc_number_hint">RC Number</string>
+    <string name="submit_button_text">Submit</string>
+</resources>
