@@ -9,7 +9,6 @@
     android:padding="24dp"
     tools:context=".ShowDetails">
 
-    <!-- Rounded Card -->
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -24,7 +23,6 @@
             android:layout_height="wrap_content"
             android:padding="24dp">
 
-            <!-- Title -->
             <TextView
                 android:id="@+id/titleTextView"
                 android:layout_width="wrap_content"
@@ -36,7 +34,6 @@
                 android:layout_centerHorizontal="true"
                 android:layout_marginBottom="24dp" />
 
-            <!-- Vehicle Type -->
             <TextView
                 android:id="@+id/vehicleTypeTextView"
                 android:layout_width="match_parent"
@@ -48,7 +45,6 @@
                 android:textColor="#1F2937"
                 android:layout_marginBottom="14dp" />
 
-            <!-- Vehicle Number -->
             <TextView
                 android:id="@+id/vehicleNumberTextView"
                 android:layout_width="match_parent"
@@ -60,7 +56,6 @@
                 android:textColor="#1F2937"
                 android:layout_marginBottom="14dp" />
 
-            <!-- RC Number -->
             <TextView
                 android:id="@+id/rcNumberTextView"
                 android:layout_width="match_parent"
@@ -72,7 +67,6 @@
                 android:textColor="#1F2937"
                 android:layout_marginBottom="28dp" />
 
-            <!-- Confirm Button -->
             <Button
                 android:id="@+id/confirmButton"
                 android:layout_width="match_parent"
@@ -86,7 +80,6 @@
                 android:textColor="@android:color/white"
                 android:layout_marginBottom="12dp" />
 
-            <!-- Edit Button -->
             <Button
                 android:id="@+id/editButton"
                 android:layout_width="match_parent"

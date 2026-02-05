@@ -41,7 +41,6 @@ public class MainActivity extends AppCompatActivity {
         selectedTimeTextView = findViewById(R.id.selected_time_textview);
         ticketTypeToggle = findViewById(R.id.ticket_type_toggle);
 
-        // Populate spinners
         ArrayAdapter<CharSequence> movieAdapter = ArrayAdapter.createFromResource(this,
                 R.array.movies_array, android.R.layout.simple_spinner_item);
         movieAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -52,7 +51,6 @@ public class MainActivity extends AppCompatActivity {
         theatreAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         theatreSpinner.setAdapter(theatreAdapter);
 
-        // Set up current date
         final Calendar c = Calendar.getInstance();
         year = c.get(Calendar.YEAR);
         month = c.get(Calendar.MONTH);

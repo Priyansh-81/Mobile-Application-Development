@@ -8,7 +8,6 @@
     android:padding="16dp"
     tools:context=".BookingDetailsActivity">
 
-    <!-- Card-like container -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -20,7 +19,6 @@
         android:orientation="vertical"
         android:padding="20dp">
 
-        <!-- Title -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -30,7 +28,6 @@
             android:textSize="22sp"
             android:textStyle="bold" />
 
-        <!-- Details -->
         <TextView
             android:id="@+id/booking_details_textview"
             android:layout_width="match_parent"

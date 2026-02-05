@@ -9,7 +9,6 @@
     android:padding="24dp"
     tools:context=".MainActivity">
 
-    <!-- Super Rounded Card -->
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -24,7 +23,6 @@
             android:layout_height="wrap_content"
             android:padding="24dp">
 
-            <!-- Title -->
             <TextView
                 android:id="@+id/titleTextView"
                 android:layout_width="wrap_content"
@@ -36,7 +34,6 @@
                 android:layout_centerHorizontal="true"
                 android:layout_marginBottom="28dp" />
 
-            <!-- Rounded Spinner -->
             <Spinner
                 android:id="@+id/vehicleTypeSpinner"
                 android:layout_width="match_parent"
@@ -47,7 +44,6 @@
                 android:paddingHorizontal="16dp"
                 android:layout_marginBottom="18dp" />
 
-            <!-- Vehicle Number -->
             <EditText
                 android:id="@+id/vehicleNumberEditText"
                 android:layout_width="match_parent"
@@ -59,7 +55,6 @@
                 android:paddingHorizontal="16dp"
                 android:layout_marginBottom="18dp" />
 
-            <!-- RC Number -->
             <EditText
                 android:id="@+id/rcNumberEditText"
                 android:layout_width="match_parent"
@@ -71,7 +66,6 @@
                 android:paddingHorizontal="16dp"
                 android:layout_marginBottom="26dp" />
 
-            <!-- Pill Button -->
             <Button
                 android:id="@+id/submitButton"
                 android:layout_width="match_parent"
