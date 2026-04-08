@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         buttonReset = findViewById(R.id.buttonReset);
 
         String[] locations = {"Delhi", "Mumbai", "Bangalore", "London", "Tokyo", "Paris", "Sydney"};
-        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, locations);
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(MainActivity.this, android.R.layout.simple_spinner_dropdown_item, locations);
         spinnerSource.setAdapter(adapter);
         spinnerDestination.setAdapter(adapter);
 
@@ -43,7 +43,6 @@ public class MainActivity extends AppCompatActivity {
                 resetFields();
             }
         });
-
         buttonSubmit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

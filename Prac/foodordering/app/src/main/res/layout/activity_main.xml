@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Food Menu"
+            android:textAlignment="center"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/pasta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pasta    250" />
+
+        <CheckBox
+            android:id="@+id/pizza"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pizza    550" />
+
+        <CheckBox
+            android:id="@+id/strogenoff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="strogenoff    300" />
+
+        <CheckBox
+            android:id="@+id/human"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Human    15000" />
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
